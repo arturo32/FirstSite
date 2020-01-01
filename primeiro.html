@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="primeiro.css">	
+	<title>Origami <3</title>
+</head>
+
+<body>
+	<header>
+		<div class= "hora"></div>
+		<h1  align="center">Origamis</h1>
+		<hr/>
+	</header>
+
+	<br/>
+	<p>Bem vindo ao meu site!</p>
+	<p>Meu nome é <a target="_blank" href="https://github.com/arturo32">Arturo Fonseca</a> e eu sei um pouco desses negócios ai:</p>
+	
+	<ul>
+		<li>C</li>
+		<li>Java</li>
+		<li>Python (<span class = "italico">mais ou menos</span>)</li>
+	</ul> 
+
+	<p>Agora eu irei montar uma tabela RGB só para testar meus conhecimentos:</p>
+
+	<table>
+		<caption>RGB colors and their combinations</caption>
+		<tr>
+			<td> </td> <td bgcolor="#FF0000">RED</td> <td bgcolor="#00FF00">GREEN</td> <td bgcolor="#0000FF">BLUE</td>
+		</tr>
+		<tr>
+			<td bgcolor="#FF0000">RED</td> <td bgcolor="#FF0000"> </td> <td bgcolor="#FFFF00"> </td> <td bgcolor="#FF00FF"> </td>
+		</tr>
+		<tr>
+			<td bgcolor="#00FF00">GREEN</td> <td bgcolor="#FFFF00"> </td> <td bgcolor="#00FF00"> </td> <td bgcolor="#00FFFF"> </td>
+		</tr>
+		<tr>
+			<td bgcolor="#0000FF">BLUE</td> <td bgcolor="#FF00FF"> </td> <td bgcolor="00FFFF"> </td> <td bgcolor="#0000FF"> </td>
+		</tr>
+	</table>
+
+	<p>Agora, uma foto do meu flickr que você pode clicar:</p>
+	
+	<div class="img_flickr">
+		<a target="_blank" title="Hi! Click on me!" href="https://www.flickr.com/photos/arturorigami_/40718030671/" ><img src="https://live.staticflickr.com/4794/40718030671_db1f5dc724_k.jpg" ></a>
+	</div>
+
+	
+
+	<script type="text/javascript">
+      
+	    window.onload = function(){
+
+			function addZero(x){
+				if(x < 10){
+					return '0' + x;
+				}
+				return x;	
+			}
+
+			function time(){
+			var date = new Date();
+			var s = date.getSeconds();
+			var para = document.getElementsByClassName("hora");
+			para[0].innerHTML = addZero(date.getHours()) + ':' + addZero(date.getMinutes()) + ':' + addZero(s);
+
+			}
+			   
+			setInterval(time, 100);
+		} 
+	
+		var celula = document.getElementsByTagName("td");
+		var inicial = document.body.style.backgroundColor;
+		
+		for(let i = 1; i < 16; i++){
+			celula[i].onmouseover= function(){
+				document.body.style.backgroundColor = celula[i].getAttribute("bgcolor");
+			}
+			celula[i].onmouseout = function(){
+				document.body.style.backgroundColor = inicial;
+			}
+		}
+
+	
+		
+
+  	    	
+
+    </script>
+
+
+</body>
+
+</html>
