@@ -30,6 +30,7 @@ header h1{
 table{
     margin: 2.5%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 table td{
@@ -59,4 +60,28 @@ a:link{
 	padding-left: 3px;
 	font-size: 15px;
 	display: inline;
+}
+
+.red{
+	background-color: #F00;
+}
+
+.green{
+	background-color: #0F0;
+}
+
+.blue{
+	background-color: #00F;
+}
+
+.yellow{
+	background-color: #FF0;
+}
+
+.magenta{
+	background-color: #F0F;
+}
+
+.cyan{
+	background-color: #0FF;
 }
