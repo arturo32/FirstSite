@@ -20,5 +20,5 @@ The problem (that right now I don't understand completely) was that I used the k
 
 * I committed a type error in the 14º cell's attribute. I didn't put the '#' symbol before the hex code of the bgcolor attribute (I discovered on <a href= "https://stackoverflow.com/questions/59556855/problem-with-interactive-table-in-javascript-html-onmouserover">Stackoverflow</a> that bgcolor is a deprecated attribute. I will put the colors with CSS in the future).
 
-* I tried to set the color of the table cells with classes and CSS instead of using HTML attributes. I couldn't return their colors anymore with ```cells = getElementsByTagName("td"); cells[i].style.backgroundColor;```. After suffering for many hours I discovered the function called "getComputedStyle" that allows you to get the properties inside a class of a element.
+* I tried to set the color of the table cells with classes and CSS instead of using HTML attributes. I couldn't return their colors anymore with ```cells = getElementsByTagName("td"); cells[i].style.backgroundColor;```. After suffering for many hours I <a href="https://javascript.info/styles-and-classes">discovered</a> the function called "getComputedStyle" that allows you to get the properties inside a class of a element.
   
