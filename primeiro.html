@@ -28,16 +28,28 @@
 	<table>
 		<caption>RGB colors and their combinations</caption>
 		<tr>
-			<td> </td> <td bgcolor="#FF0000">RED</td> <td bgcolor="#00FF00">GREEN</td> <td bgcolor="#0000FF">BLUE</td>
+			<td> </td>
+			<td class="red">RED</td> 
+			<td class="green">GREEN</td> 
+			<td class="blue">BLUE</td>
 		</tr>
 		<tr>
-			<td bgcolor="#FF0000">RED</td> <td bgcolor="#FF0000"> </td> <td bgcolor="#FFFF00"> </td> <td bgcolor="#FF00FF"> </td>
+			<td class="red">RED</td> 
+			<td class="red"> </td> 
+			<td class="yellow"> </td> 
+			<td class="magenta"> </td>
 		</tr>
 		<tr>
-			<td bgcolor="#00FF00">GREEN</td> <td bgcolor="#FFFF00"> </td> <td bgcolor="#00FF00"> </td> <td bgcolor="#00FFFF"> </td>
+			<td class="green">GREEN</td> 
+			<td class="yellow"> </td> 
+			<td class="green"> </td> 
+			<td class="cyan"> </td>
 		</tr>
 		<tr>
-			<td bgcolor="#0000FF">BLUE</td> <td bgcolor="#FF00FF"> </td> <td bgcolor="#00FFFF"> </td> <td bgcolor="#0000FF"> </td>
+			<td class="blue">BLUE</td> 
+			<td class="magenta"> </td> 
+			<td class="cyan"> </td> 
+			<td class="blue"> </td>
 		</tr>
 	</table>
 
@@ -74,19 +86,14 @@
 		var celula = document.getElementsByTagName("td");
 		var inicial = document.body.style.backgroundColor;
 		
-		for(let i = 1; i < 16; i++){
+		for(let i = 1; i < celula.length; i++){
 			celula[i].onmouseover= function(){
-				document.body.style.backgroundColor = celula[i].getAttribute("bgcolor");
+				document.body.style.backgroundColor = getComputedStyle(celula[i]).backgroundColor;
 			}
 			celula[i].onmouseout = function(){
 				document.body.style.backgroundColor = inicial;
 			}
 		}
-
-	
-		
-
-  	    	
 
     </script>
 
