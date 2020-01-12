@@ -47,6 +47,13 @@ caption{
 	caption-side: bottom;
 }
 
+.invisible{
+	color: lightgray;
+	padding-top: 1px;
+	position: relative;
+	bottom: 5px;
+}
+
 a:link{
 	text-decoration: none;
 }
@@ -84,4 +91,10 @@ a:link{
 
 .cyan{
 	background-color: #0FF;
+}
+
+footer{
+	text-align: center;
+	position: relative;
+	top: 70px;
 }
