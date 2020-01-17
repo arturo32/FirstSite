@@ -10,8 +10,8 @@ header{
 }
 
 header h1{
-    color: gray;
-    font-family: Bodoni, serif;
+    color: #43796b;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
 }
 
 .italico{
@@ -60,7 +60,7 @@ a:link{
 
 .hora{
 	border-style: solid;
-	border-color: gray;
+	border-color: #43796b;
 	border-radius: 9px;
 	border-width: 2px;
 	padding-right: 3px;
