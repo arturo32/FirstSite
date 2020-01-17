@@ -12,6 +12,7 @@ header{
 header h1{
     color: #43796b;
     font-family: lulo-clean-w01-one-bold, sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .italico{
